@@ -23,4 +23,12 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'no-unused-vars': 'warn',
   },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.test.js'],
+        moduleDirectory: ['node_modules', 'src'],
+      },
+    },
+  },
 }
