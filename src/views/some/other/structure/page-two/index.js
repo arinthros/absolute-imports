@@ -1,3 +1,3 @@
-import { tweedleDee } from '../../../../../utils/tweedle-dee'
+import { tweedleDee } from 'utils/tweedle-dee'
 
 console.log(tweedleDee('Page Two'))
