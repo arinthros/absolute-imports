@@ -1,6 +1,9 @@
 {
   "plugins": [
     [
+      "transform-export-extensions"
+    ],
+    [
       "module-resolver",
       {
         "root": [
@@ -8,5 +11,36 @@
         ]
       }
     ]
+  ],
+  "presets": [
+    "@babel/react",
+    [
+      "@babel/env",
+      {
+        "targets": {
+          "browsers": "last 2 versions",
+          "node": "12.16.2"
+        },
+        "useBuiltIns": "usage",
+        "corejs": "3"
+      }
+    ]
+  ],
+  "env": {
+    "build": {
+      "ignore": [
+        "**/*.test.js",
+        "__tests__",
+        "**/__tests__"
+      ]
+    },
+    "test": {
+      "plugins": [
+        "@babel/plugin-transform-runtime"
+      ]
+    }
+  },
+  "ignore": [
+    "node_modules"
   ]
 }

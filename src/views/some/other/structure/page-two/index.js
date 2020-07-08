@@ -1,3 +1,5 @@
 import { tweedleDee } from 'utils/tweedle-dee'
 
-console.log(tweedleDee('Page Two'))
+export function pageTwo() {
+  return tweedleDee('Page Two')
+}
