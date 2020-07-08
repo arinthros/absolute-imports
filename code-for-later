@@ -1,0 +1,11 @@
+"settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": ['.js', '.jsx', '.test.js'],
+        "moduleDirectory": [
+          "node_modules",
+          "src"
+        ]
+      }
+    }
+  }
